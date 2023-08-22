@@ -14,13 +14,13 @@ class Privacy extends StatelessWidget {
       children: [
         ListTile(
           title: Text(
-            'No Persional Data Collected',
+            'No Personal Data Collected',
             style: TextStyle(color: Theme.of(context).colorScheme.primary),
           ),
-          subtitle: const Text('We do not collect any persional information.'
+          subtitle: const Text('We do not collect any personal information.'
               ' Data you created during the usage remains in your device'
               ' all the time and will be removed when you uninstall this app.'
-              ' (tap me for the full text)'),
+              ' (tap for the full text)'),
           onTap: () {
             launchUrl(Uri.parse(urlPrivacyPolicy));
           },

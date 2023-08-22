@@ -41,7 +41,7 @@ dependencies:
   url_launcher: ^6.1.11
   sqflite: ^2.2.8+4
   http: ^1.1.0
-  flutter_local_notifications: ^14.1.1
+  flutter_local_notifications: ^15.1.0+1
   timeago: ^3.4.0
   path: ^1.8.3
   provider: ^6.0.5

@@ -20,7 +20,7 @@ class Disclaimer extends StatelessWidget {
           subtitle: const Text(" We do not guarantee the"
               " accuracy of the information or the functionality provided"
               " by this app. Please use it at your own risk."
-              " (tap me for the full text)"),
+              " (tap for the full text)"),
           onTap: () {
             launchUrl(Uri.parse(urlDisclaimer));
           },
