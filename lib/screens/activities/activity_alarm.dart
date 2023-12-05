@@ -12,8 +12,8 @@ class ActivityAlarm extends StatefulWidget {
   const ActivityAlarm({
     required this.activity,
     required this.schedule,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   State<ActivityAlarm> createState() => _ActivityAlarmState();

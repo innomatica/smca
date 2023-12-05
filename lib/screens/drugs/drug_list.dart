@@ -11,7 +11,7 @@ import 'drug_alarm.dart';
 import 'drug_details.dart';
 
 class DrugList extends StatefulWidget {
-  const DrugList({Key? key}) : super(key: key);
+  const DrugList({super.key});
 
   @override
   State<DrugList> createState() => _DrugListState();

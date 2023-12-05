@@ -11,7 +11,7 @@ import '../../models/schedule.dart';
 import '../../shared/constants.dart';
 
 class AlarmList extends StatefulWidget {
-  const AlarmList({Key? key}) : super(key: key);
+  const AlarmList({super.key});
 
   @override
   State<AlarmList> createState() => _AlarmListState();

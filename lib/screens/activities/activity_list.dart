@@ -8,7 +8,7 @@ import 'activity_alarm.dart';
 import 'activity_details.dart';
 
 class ActivityList extends StatefulWidget {
-  const ActivityList({Key? key}) : super(key: key);
+  const ActivityList({super.key});
 
   @override
   State<ActivityList> createState() => _ActivityListState();

@@ -8,7 +8,7 @@ import '../../logic/drug.dart';
 import '../../shared/settings.dart';
 
 class InfoList extends StatefulWidget {
-  const InfoList({Key? key}) : super(key: key);
+  const InfoList({super.key});
 
   @override
   State<InfoList> createState() => _InfoListState();

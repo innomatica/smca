@@ -28,7 +28,7 @@ enum ViewType {
 
 class ActivityDetails extends StatefulWidget {
   final Activity activity;
-  const ActivityDetails({required this.activity, Key? key}) : super(key: key);
+  const ActivityDetails({required this.activity, super.key});
 
   @override
   State<ActivityDetails> createState() => _ActivityDetailsState();

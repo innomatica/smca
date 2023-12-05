@@ -4,7 +4,7 @@ import 'package:url_launcher/url_launcher.dart';
 import '../../shared/settings.dart';
 
 class SourceList extends StatelessWidget {
-  const SourceList({Key? key}) : super(key: key);
+  const SourceList({super.key});
 
   @override
   Widget build(BuildContext context) {

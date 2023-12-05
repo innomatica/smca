@@ -9,10 +9,10 @@ class DrugAlarm extends StatefulWidget {
   final Drug drug;
   final Schedule schedule;
   const DrugAlarm({
-    Key? key,
+    super.key,
     required this.drug,
     required this.schedule,
-  }) : super(key: key);
+  });
 
   @override
   State<DrugAlarm> createState() => _DrugAlarmState();

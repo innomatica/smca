@@ -6,8 +6,7 @@ class ActivityChart extends StatelessWidget {
   final List<charts.Series<dynamic, DateTime>> seriesList;
   final bool animate;
 
-  const ActivityChart(this.seriesList, {this.animate = false, Key? key})
-      : super(key: key);
+  const ActivityChart(this.seriesList, {this.animate = false, super.key});
 
   @override
   Widget build(BuildContext context) {
