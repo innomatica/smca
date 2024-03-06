@@ -225,7 +225,7 @@ class _ActivityAlarmState extends State<ActivityAlarm> {
                     await activityBloc.update(widget.activity);
                     await activityBloc.addSchedule(widget.schedule);
 
-                    if (!mounted) return;
+                    if (!context.mounted) return;
                     Navigator.pop(context);
                   },
                   child: const Text('Update Alarm Settings'),
@@ -240,7 +240,7 @@ class _ActivityAlarmState extends State<ActivityAlarm> {
                   onPressed: () async {
                     await activityBloc.deleteSchedule(widget.schedule);
 
-                    if (!mounted) return;
+                    if (!context.mounted) return;
                     Navigator.pop(context);
                   },
                   child: const Text('Cancel Alarms'),

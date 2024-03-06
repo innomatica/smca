@@ -195,7 +195,7 @@ class _AlarmListState extends State<AlarmList> with WidgetsBindingObserver {
                             measurementValue = null;
                             measurementNote == null;
 
-                            if (!mounted) return;
+                            if (!context.mounted) return;
                             Navigator.pop(context);
                           } else {
                             debugPrint('failed to validate');
@@ -343,7 +343,7 @@ class _AlarmListState extends State<AlarmList> with WidgetsBindingObserver {
                       onPressed: () async {
                         await _createLog(alarm);
                         setState(() {});
-                        if (!mounted) return;
+                        if (!context.mounted) return;
                         Navigator.pop(context);
                       },
                       child: Text(

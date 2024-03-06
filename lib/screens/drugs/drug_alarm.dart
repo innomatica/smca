@@ -180,7 +180,7 @@ class _DrugAlarmState extends State<DrugAlarm> {
                     await drugBloc.update(widget.drug);
                     await drugBloc.addSchedule(widget.schedule);
 
-                    if (!mounted) return;
+                    if (!context.mounted) return;
                     Navigator.pop(context);
                   },
                   child: const Text('Update Alarm Settings'),
@@ -195,7 +195,7 @@ class _DrugAlarmState extends State<DrugAlarm> {
                   onPressed: () async {
                     await drugBloc.deleteSchedule(widget.schedule);
 
-                    if (!mounted) return;
+                    if (!context.mounted) return;
                     Navigator.pop(context);
                   },
                   child: const Text('Cancel Alarms'),
